@@ -132,15 +132,10 @@ WIN_COMBINATIONS = [
 
 def play(board)
   until over?(board)
-    if turn_count.odd?
-      value = "X"
-    else
-      value = "O"
-    end
-    turn(board)
+    turn(board) 
     draw?(board)
-
    end
+   
    if won?(board)
      puts "Congratulations #{winner(board)}!"
    elsif draw?(board)
