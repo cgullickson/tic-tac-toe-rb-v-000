@@ -140,6 +140,6 @@ if draw?(board)
   puts "Cat's Game"
 else win?(board)
   puts "Congratulations #{winner(board)}!"
-  
+
   end
 end
