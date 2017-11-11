@@ -106,7 +106,7 @@ WIN_COMBINATIONS = [
 
    end
 return false
- end
+end
 
  def full? (board)
    board.all? {|i| i == "X" || i == "O"}
