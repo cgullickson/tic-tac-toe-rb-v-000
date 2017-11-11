@@ -48,7 +48,7 @@ WIN_COMBINATIONS = [
    input = gets.strip
    num = input_to_index(input)
    if valid_move?(board,num)
-     move(board,num,current_player(board))
+     move(board,num,current_player(board)
    else
      turn(board)
    end
@@ -133,13 +133,13 @@ WIN_COMBINATIONS = [
  end
 
 def play(board)
-until over?(board)
-  turn(board)
-end
-if draw?(board)
-  puts "Cat's Game"
-else win?(board)
-  puts "Congratulations #{winner(board)}!"
+  until over?(board)
+    turn(board)
+  end
 
+  if won?(board)
+     puts "Congratulations #{winner(board)}!"
+  elsif draw?(board)
+     puts "Cat's Game!"
   end
 end
