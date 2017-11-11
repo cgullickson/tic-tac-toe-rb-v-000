@@ -133,6 +133,7 @@ WIN_COMBINATIONS = [
 def play(board)
   until over?(board)
     turn(board)
+    binding.pry
     draw?(board)
   end
 
