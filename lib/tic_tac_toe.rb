@@ -103,9 +103,9 @@ WIN_COMBINATIONS = [
        return win_combo
 
      end
-     return false
-   end
 
+   end
+return false
  end
 
  def full? (board)
